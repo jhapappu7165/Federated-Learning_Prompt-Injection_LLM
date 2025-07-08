@@ -1,4 +1,4 @@
-# Federated Prompt Injection Detection in LLMs (Work In Progress)
+# Federated Prompt Injection Detection in LLMs
 
 > ⚠️ This project is currently under active research and development. All implementations, models, and evaluations will be added progressively.
 
