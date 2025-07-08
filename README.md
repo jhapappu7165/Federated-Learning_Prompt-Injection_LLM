@@ -31,22 +31,12 @@ The project aims to address a critical security vulnerability — **prompt injec
 
 ## 🔭 Planned Architecture
 
-Federated Learning Network
-┌────────────┐ ┌────────────┐ ┌────────────┐
-│ Org A │ │ Org B │ │ Org C │
-│ ────────── │ │ ────────── │ │ ────────── │
-│ Local LLM │ │ Local LLM │ │ Local LLM │
-│ Detector │ │ Detector │ │ Detector │
-└────┬───────┘ └────┬───────┘ └────┬───────┘
-▼ ▼ ▼
-Aggregated Updates (FedAvg)
-▼
-Central Aggregator (Secure)
+![Federated Learning Architecture](architecture.jpg)
 
 
 ---
 
-## 🚀 Planned Phases (Future Work)
+## 🚀 Planned Phases
 
 ### Phase 1: **Baseline Detection (Centralized)**
 - Implement semantic analysis, rule-based filters, transformer classifiers
