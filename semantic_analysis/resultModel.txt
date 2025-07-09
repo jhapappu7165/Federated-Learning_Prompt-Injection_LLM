@@ -1,0 +1,46 @@
+***Classification Report***
+
+              precision    recall  f1-score   support
+
+      benign       0.87      0.94      0.90        80
+   malicious       0.89      0.79      0.84        53
+
+    accuracy                           0.88       133
+   macro avg       0.88      0.86      0.87       133
+weighted avg       0.88      0.88      0.88       133
+
+***Confusion Matrix***
+[[75  5]
+ [11 42]]
+
+
+***INTERPRETATION***
+PRECISION: Of all prompts the model predicted as a class, how many were actually that class?
+    Benign: 87% of predicted benign prompts were truly benign.
+    Malicious: 89% of predicted malicious prompts were truly malicious.
+
+RECALL: Of all actual prompts of a class, how many did the model correctly identify?
+    Benign: 94% of all benign prompts were correctly identified.
+    Malicious: 79% of all malicious prompts were correctly identified.
+
+F1-SCORE: Harmonic mean of precision and recall (higher is better).
+SUPPORT: Number of samples in each class.
+ACCURACY: 88% of all prompts were classified correctly.
+
+
+
+# CONFUSION MATRIX
+[[75  5]
+ [11 42]]
+
+Rows: Actual class (benign, malicious)
+Columns: Predicted class (benign, malicious)
+
+                  Predicted Benign	  Predicted Malicious
+Actual Benign	          75	               5
+Actual Malicious	      11	              42
+
+    - 75 benign prompts were correctly classified as benign.
+    - 5 benign prompts were misclassified as malicious.
+    - 42 malicious prompts were correctly classified as malicious.
+    - 11 malicious prompts were misclassified as benign.
